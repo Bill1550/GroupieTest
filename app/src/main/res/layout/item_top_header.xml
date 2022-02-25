@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/BaseItemStyle"
+    >
+
+    <ImageView
+        android:id="@+id/pixView"
+        android:layout_width="@dimen/top_header_image_size"
+        android:layout_height="@dimen/top_header_image_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/titleView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_baseline_gesture_24"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/pixView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pixView"
+        app:layout_constraintBottom_toBottomOf="@id/pixView"
+        android:textSize="32sp"
+        android:gravity="center"
+        tools:text="This is a heading title"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

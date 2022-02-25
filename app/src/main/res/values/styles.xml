@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseItemStyle" >
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <dimen name="top_header_image_size">64dp</dimen>
+</resources>
