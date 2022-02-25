@@ -85,9 +85,6 @@ class SimpleDynamicFragment : Fragment() {
     }
 
     private fun updateLevels() {
-//        val updates = groupAdapter.indices().mapNotNull { groupAdapter.getItem(it) as? SimpleItem }
-//            .map { SimpleItem(it.title, (it.level+1) % 7) }
-//        groupAdapter.update(updates)
         groupAdapter.indices().map { pos ->
             (groupAdapter.getItem(pos) as? SimpleItem)?.let { item ->
                 item.level = (item.level+1) % SimpleItem.NUM_LEVELS

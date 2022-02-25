@@ -5,5 +5,5 @@ import kotlinx.serialization.json.Json
 
 object DogData {
 
-    val breeds by lazy { Json.decodeFromString<List<DogBreed>>(dogBreedsJson)}
+    val breeds by lazy { Json.decodeFromString<List<DogBreed>>(dogBreedsJson) }
 }

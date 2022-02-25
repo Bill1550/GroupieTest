@@ -38,7 +38,7 @@ class SectionsListFragment : Fragment() {
     private val holder = lazyViewBinding { FragmentMainBinding.inflate(layoutInflater) }
     private val groupAdapter = GroupAdapter<GroupieViewHolder>()
     private val sections = List( HEADINGS.size) { Section() }
-
+    private val topItem = TopHeaderItem(MixedSectionsListFragment.MAIN_TITLE)
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -56,6 +56,7 @@ class SectionsListFragment : Fragment() {
             groupList.layoutManager = LinearLayoutManager(requireContext())
         }
 
+        groupAdapter.add(topItem)
         groupAdapter.addAll(sections)
 
         loadData()

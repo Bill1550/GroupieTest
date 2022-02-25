@@ -27,7 +27,6 @@ class SimpleItem(
     }
 
     override fun initializeViewBinding(view: View): ItemSimpleBinding = ItemSimpleBinding.bind(view)
-
     override fun getLayout(): Int = R.layout.item_simple
 
     override fun bind(viewBinding: ItemSimpleBinding, position: Int) {
